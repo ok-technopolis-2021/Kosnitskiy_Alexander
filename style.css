@@ -46,7 +46,7 @@ body {
     50% {
         background-color: #292828;
         padding: 2.5% 10% 2.5% 10%;
-        font-size: 1.3em;
+        font-size: 2.1vw;
     }
 }
 
@@ -56,14 +56,14 @@ body {
     color: white;
     background-color: #444444;
     border-radius: 15vh;
-    font-size: 1.1em;
+    font-size: 1.8vw;
     transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
 }
 
 #download:hover {
     background-color: #222222;
     padding: 3% 12% 3% 12%;
-    font-size: 1.4em;
+    font-size: 2.3vw;
     transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
 }
 
@@ -99,8 +99,12 @@ body {
 }
 
 .header {
-    font-size: 2em;
+    font-size: 3vw;
     font-weight: bold;
+}
+
+.explanation {
+    font-size: 1.7vw;
 }
 
 a {
@@ -120,15 +124,16 @@ main {
 }
 
 footer {
+    font-size: 1.7vw;
     color: white;
     margin-bottom: 5%;
 }
 
 #main_header {
-    font-size: 3em;
+    font-size: 6vw;
     font-weight: bold;
 }
 
 #main_job {
-    font-size: 1.3em;
+    font-size: 3vw;
 }

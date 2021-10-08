@@ -7,56 +7,37 @@
     <meta name="keywords" content="programming, web, design, portfolio, professional, developer, html, css, JavaScript">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <title>Alex Smith's portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="background">
-<header class="header">
-    <!--Учитывая занесение всей структуры в таблицу пока что не знаю, можно ли сюда что добавить-->
-</header>
-<main class="main">
+<body>
+<div id="card">
+    <div id="main-info">
+        <header id="employee-info">
+            <img id="avatar" src="resources/profile.jpeg" alt="Alex Smith's avatar"/>
 
-    <table class="content_wrapper">
-        <tr class="introduction">
-            <td>
-                <div class="employee">
-                    <div class="avatar"><img class="profile_image" src="resources/Placeholder.png"
-                                             alt="Alex Smith profile picture"
-                                             width="200" height="200"></div>
-                    <h2 class="name">Alex Smith</h2>
-                    <p class="position">Web Designer</p>
-                    <form class="button_handler">
-                        <table class="buttons_table">
-                            <tr>
-                                <th><input class="first_button" type="image" src="resources/Placeholder.png"
-                                           alt="circle button"
-                                           width="30" height="30"></th>
-                                <th><input class="second_button" type="image" src="resources/Placeholder.png"
-                                           alt="circle button"
-                                           width="30" height="30"></th>
-                                <th><input class="third_button" type="image" src="resources/Placeholder.png"
-                                           alt="circle button"
-                                           width="30" height="30"></th>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
-                <form class="CV_downloader">
-                    <button class="CV_download_button" type="button">Download CV</button>
-                </form>
-                <p class="rights_reserved">©2020 All rights reserved</p>
-            </td>
+            <div class="employee-text">
+            <div class="header">Alex Smith</div>
+            <div class="explanation">Web Designer</div>
+            </div>
 
-            <td class="main_content">
-                <div class="content_text">
-                    <h1 class="content_name">Alex Smith</h1>
-                    <p class="content_position">Web Designer</p>
-                </div>
-            </td>
-        </tr>
-    </table>
+            <div id="menu">
+                <img class="icon" src="resources/github.png" alt="github"/>
+                <img class="icon" src="resources/vk.png" alt="vk"/>
+                <img class="icon" src="resources/odnoklassniki.png" alt="TamTam"/>
+            </div>
+        </header>
+        <button id="download">Download CV</button>
+        <footer>
+            <div>©2020 All rights reserved.</div>
+        </footer>
+    </div>
 
-</main>
-<footer class="footer">
-    <!--Учитывая занесение всей структуры в таблицу пока что не знаю, можно ли сюда что добавить-->
-</footer>
+    <div id="main_plate">
+        <main>
+            <div id="main_header">Alex Smith</div>
+            <div id="main_job">Web Designer</div>
+        </main>
+    </div>
+</div>
 </body>
 </html>

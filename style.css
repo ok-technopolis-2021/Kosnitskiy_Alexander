@@ -42,6 +42,14 @@ body {
     align-items: center;
 }
 
+@keyframes button-click {
+    50% {
+        background-color: #292828;
+        padding: 2.5% 10% 2.5% 10%;
+        font-size: 1.3em;
+    }
+}
+
 #download {
     border: 0.5vh solid white;
     padding: 2% 8% 2% 8%;
@@ -49,6 +57,19 @@ body {
     background-color: #444444;
     border-radius: 15vh;
     font-size: 1.1em;
+    transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
+}
+
+#download:hover {
+    background-color: #222222;
+    padding: 3% 12% 3% 12%;
+    font-size: 1.4em;
+    transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
+}
+
+#download:active {
+    animation-name: button-click;
+    animation-duration: 0.2s;
 }
 
 #main_plate {
@@ -82,8 +103,12 @@ body {
     font-weight: bold;
 }
 
-.icon {
+a {
     width: 28%;
+}
+
+.icon {
+    width: 100%;
     border-radius: 50%;
 }
 

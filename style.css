@@ -1,5 +1,6 @@
-body {
+.body {
     font-family: Helvetica, sans-serif;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,16 +8,16 @@ body {
     height: 96.5vh;
 }
 
-#card {
+.card {
     display: flex;
     justify-content: center;
     background-color: #444444;
-    width: 80%;
-    height: 95%;
-    border-radius: 3vw;
+    width: 1127px;
+    height: 595px;
+    border-radius: 30px;
 }
 
-#main-info {
+.main-info {
     height: 100%;
     width: 30%;
     display: flex;
@@ -25,19 +26,18 @@ body {
     align-items: center;
 }
 
-#employee-info {
+.employee-info {
     margin-top: 12.5%;
-    height: 64%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-#menu {
+.menu {
     display: flex;
-    width: 45%;
-    flex-direction: row;
+    width: 100px;
     justify-content: space-between;
     align-items: center;
 }
@@ -45,35 +45,37 @@ body {
 @keyframes button-click {
     50% {
         background-color: #292828;
-        padding: 2.5% 10% 2.5% 10%;
-        font-size: 2.1vw;
+        width: 190px;
+        height: 52px;
+        font-size: 19px;
     }
 }
 
-#download {
+.download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 0.5vh solid white;
-    padding: 2% 8% 2% 8%;
+    text-decoration: none;
     color: white;
-    background-color: #444444;
-    border-radius: 15vh;
-    font-size: 1.8vw;
+    width: 168px;
+    height: 46px;
+    border-radius: 40px;
+    font-size: 17px;
     transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
 }
 
-#download:hover {
+.download:hover {
     background-color: #222222;
-    padding: 3% 12% 3% 12%;
-    font-size: 2.3vw;
-    transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
+    transition: background-color 0.5s;
 }
 
-#download:active {
+.download:active {
     animation-name: button-click;
     animation-duration: 0.2s;
 }
 
-#main_plate {
-    color: white;
+.main_plate {
     height: 100%;
     width: 70%;
     border-radius: 3vw;
@@ -84,56 +86,51 @@ body {
     align-items: center;
 }
 
-#avatar {
-    width: 68%;
-    margin-bottom: 3%;
+.avatar {
+    width: 180px;
+    margin-bottom: 8%;
     border-radius: 50%;
-    box-shadow: 2vh 2vh 4vh black;
+    box-shadow: 12px 12px 0 grey;
 }
 
 .employee-text {
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .header {
-    font-size: 3vw;
+    text-align: center;
+    font-size: 32px;
     font-weight: bold;
 }
 
 .explanation {
-    font-size: 1.7vw;
-}
-
-a {
-    width: 28%;
+    font-size: 20px;
 }
 
 .icon {
-    width: 100%;
+    width: 28px;
     border-radius: 50%;
 }
 
-main {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-footer {
-    font-size: 1.7vw;
-    color: white;
+.footer {
+    font-size: 14px;
     margin-bottom: 5%;
 }
 
-#main_header {
-    font-size: 6vw;
+.main_header {
+    font-size: 62px;
     font-weight: bold;
 }
 
-#main_job {
-    font-size: 3vw;
+.main_job {
+    font-size: 22px;
 }

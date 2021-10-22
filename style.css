@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.5vh solid white;
+    border: 3px solid white;
     text-decoration: none;
     color: white;
     width: 168px;
@@ -78,7 +78,7 @@
 .main_plate {
     height: 100%;
     width: 70%;
-    border-radius: 3vw;
+    border-radius: 30px;
     background-color: #222222;
     display: flex;
     flex-direction: column;

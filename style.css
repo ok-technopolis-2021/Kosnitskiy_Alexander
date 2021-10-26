@@ -17,29 +17,61 @@
     border-radius: 30px;
 }
 
-.main-info {
+.card-main-info {
     height: 100%;
-    width: 30%;
+    width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.employee-info {
+.card-main-info__employee-info {
     margin-top: 12.5%;
-    height: 60%;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu {
+
+.card-main-info__avatar {
+    width: 180px;
+    margin-top: 23px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    box-shadow: 12px 12px 0 grey;
+}
+
+.card-main-info__text {
     display: flex;
-    width: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-main-info__header {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.card-main-info__job-title {
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+.card-main-info__menu {
+    display: flex;
+    width: 93px;
     justify-content: space-between;
     align-items: center;
+}
+
+.card-main-info__menu-icon {
+    width: 24px;
+    border-radius: 50%;
 }
 
 @keyframes button-click {
@@ -51,33 +83,34 @@
     }
 }
 
-.download {
+.card-main-info__download {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 3px solid white;
     text-decoration: none;
+    margin-bottom: 10px;
     color: white;
-    width: 168px;
-    height: 46px;
+    width: 164px;
+    height: 39px;
     border-radius: 40px;
     font-size: 17px;
     transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
 }
 
-.download:hover {
+.card-main-info__download:hover {
     background-color: #222222;
     transition: background-color 0.5s;
 }
 
-.download:active {
+.card-main-info__download:active {
     animation-name: button-click;
     animation-duration: 0.2s;
 }
 
-.main_plate {
+.card-main-plate {
     height: 100%;
-    width: 70%;
+    width: 747px;
     border-radius: 30px;
     background-color: #222222;
     display: flex;
@@ -86,51 +119,26 @@
     align-items: center;
 }
 
-.avatar {
-    width: 180px;
-    margin-bottom: 8%;
-    border-radius: 50%;
-    box-shadow: 12px 12px 0 grey;
-}
-
-.employee-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.explanation {
-    font-size: 20px;
-}
-
-.icon {
-    width: 28px;
-    border-radius: 50%;
-}
-
-.main {
+.card-main-plate__title {
+    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.footer {
-    font-size: 14px;
-    margin-bottom: 5%;
-}
-
-.main_header {
+.card-main-plate__title-header {
     font-size: 62px;
     font-weight: bold;
 }
 
-.main_job {
+.card-main-plate__title-job {
+    margin-top: 6px;
+    margin-bottom: -5px;
     font-size: 22px;
+}
+
+.card-main-info__footer {
+    font-size: 14px;
+    margin-bottom: 15px;
 }

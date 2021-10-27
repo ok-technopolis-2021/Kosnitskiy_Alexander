@@ -44,20 +44,20 @@
     box-shadow: 12px 12px 0 grey;
 }
 
-.card-info__text {
+.card-info__title {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.card-info__header {
+.card-info__title-header {
     margin-top: 7px;
     text-align: center;
     font-size: 38px;
     font-weight: bold;
 }
 
-.card-info__job-title {
+.card-info__title-job {
     margin-top: 7px;
     font-size: 20px;
 }

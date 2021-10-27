@@ -1,7 +1,6 @@
 .body {
     font-family: Helvetica, sans-serif;
     display: flex;
-    color: white;
     justify-content: center;
     align-items: center;
     height: 96.5vh;
@@ -9,21 +8,32 @@
 
 .body_light {
     background-color: lightgray;
-    transition: ease 0.3s;
+    color: white;
+    transition: ease 0.4s;
 }
 
 .body_dark {
-    background-color: #1f1e1e;
-    transition: ease 0.3s;
+    background-color: #2d2d2d;
+    color: black;
+    transition: ease 0.4s;
 }
 
 .card {
     display: flex;
     justify-content: center;
-    background-color: #444444;
     width: 1127px;
     height: 595px;
     border-radius: 30px;
+}
+
+.card_light {
+    background-color: #444444;
+    transition: ease 0.4s;
+}
+
+.card_dark {
+    background-color: #cacaca;
+    transition: ease 0.4s;
 }
 
 .card-info {
@@ -96,15 +106,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid white;
+    border: 3px solid;
     text-decoration: none;
     margin-bottom: 10px;
-    color: white;
     width: 164px;
     height: 39px;
     border-radius: 40px;
     font-size: 17px;
     transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
+}
+
+.card-info__download_light {
+    border-color: white;
+    color: white;
+    transition: ease 0.4s;
+}
+
+.card-info__download_dark {
+    border-color: black;
+    color: black;
+    transition: ease 0.4s;
 }
 
 .card-info__download:hover {
@@ -117,15 +138,29 @@
     animation-duration: 0.2s;
 }
 
+.card-info__footer {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
 .card-plate {
     height: 100%;
     width: 747px;
     border-radius: 30px;
-    background-color: #222222;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.card-plate_light {
+    background-color: #222222;
+    transition: ease 0.4s;
+}
+
+.card-plate_dark {
+    background-color: skyblue;
+    transition: ease 0.4s;
 }
 
 .card-plate__title {
@@ -147,17 +182,12 @@
     font-size: 22px;
 }
 
-.card-info__footer {
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
 .themeSwitch {
     position: absolute;
     top: 0.25%;
     right: 0.25%;
 }
 
-#themeSwitch__button {
+.themeSwitch__button {
     width: 64px;
 }

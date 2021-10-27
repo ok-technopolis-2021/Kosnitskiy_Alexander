@@ -17,7 +17,7 @@
     border-radius: 30px;
 }
 
-.card-main-info {
+.card-info {
     height: 100%;
     width: 380px;
     display: flex;
@@ -26,7 +26,7 @@
     align-items: center;
 }
 
-.card-main-info__employee-info {
+.card-info__employee-info {
     margin-top: 12.5%;
     height: 350px;
     display: flex;
@@ -36,7 +36,7 @@
 }
 
 
-.card-main-info__avatar {
+.card-info__avatar {
     width: 180px;
     margin-top: 23px;
     margin-bottom: 8px;
@@ -44,32 +44,32 @@
     box-shadow: 12px 12px 0 grey;
 }
 
-.card-main-info__text {
+.card-info__text {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.card-main-info__header {
-    margin-top: 8px;
+.card-info__header {
+    margin-top: 7px;
     text-align: center;
     font-size: 38px;
     font-weight: bold;
 }
 
-.card-main-info__job-title {
-    margin-top: 6px;
+.card-info__job-title {
+    margin-top: 7px;
     font-size: 20px;
 }
 
-.card-main-info__menu {
+.card-info__menu {
     display: flex;
     width: 93px;
     justify-content: space-between;
     align-items: center;
 }
 
-.card-main-info__menu-icon {
+.card-info__menu-icon {
     width: 24px;
     border-radius: 50%;
 }
@@ -83,7 +83,7 @@
     }
 }
 
-.card-main-info__download {
+.card-info__download {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,17 +98,17 @@
     transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
 }
 
-.card-main-info__download:hover {
+.card-info__download:hover {
     background-color: #222222;
     transition: background-color 0.5s;
 }
 
-.card-main-info__download:active {
+.card-info__download:active {
     animation-name: button-click;
     animation-duration: 0.2s;
 }
 
-.card-main-plate {
+.card-plate {
     height: 100%;
     width: 747px;
     border-radius: 30px;
@@ -119,7 +119,7 @@
     align-items: center;
 }
 
-.card-main-plate__title {
+.card-plate__title {
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
@@ -127,18 +127,18 @@
     justify-content: center;
 }
 
-.card-main-plate__title-header {
+.card-plate__title-header {
     font-size: 62px;
     font-weight: bold;
 }
 
-.card-main-plate__title-job {
+.card-plate__title-job {
     margin-top: 6px;
     margin-bottom: -5px;
     font-size: 22px;
 }
 
-.card-main-info__footer {
+.card-info__footer {
     font-size: 14px;
     margin-bottom: 15px;
 }

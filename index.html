@@ -9,7 +9,13 @@
     <title>Alexander's portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
+<body class="body body_light">
+
+<aside class="themeSwitch">
+    <input id="themeSwitch__button" type="image"
+           src="resources/night-mode.png" alt="Switch theme"/>
+</aside>
+
 <div class="card">
     <div class="card-info">
         <header class="card-info__employee-info">
@@ -45,5 +51,22 @@
         </main>
     </div>
 </div>
+
+
+<script>
+    const button = document.getElementById("themeSwitch__button");
+
+    button.addEventListener('click', () => {
+        let currentBodyClass = document.body.classList;
+
+        if (currentBodyClass.contains("body_light")) {
+            currentBodyClass.remove('body_light')
+            currentBodyClass.add('body_dark');
+        } else if (currentBodyClass.contains("body_dark")) {
+            currentBodyClass.remove('body_dark');
+            currentBodyClass.add('body_light')
+        }
+    });
+</script>
 </body>
 </html>

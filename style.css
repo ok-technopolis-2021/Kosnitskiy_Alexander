@@ -1,11 +1,20 @@
 .body {
     font-family: Helvetica, sans-serif;
-    color: white;
     display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
     height: 96.5vh;
+}
+
+.body_light {
+    background-color: lightgray;
+    transition: ease 0.3s;
+}
+
+.body_dark {
+    background-color: #1f1e1e;
+    transition: ease 0.3s;
 }
 
 .card {
@@ -141,4 +150,14 @@
 .card-info__footer {
     font-size: 14px;
     margin-bottom: 15px;
+}
+
+.themeSwitch {
+    position: absolute;
+    top: 0.25%;
+    right: 0.25%;
+}
+
+#themeSwitch__button {
+    width: 64px;
 }

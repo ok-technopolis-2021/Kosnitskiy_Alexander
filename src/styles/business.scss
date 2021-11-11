@@ -1,47 +1,96 @@
-@import './reset.scss';
-
 .body {
     font-family: Helvetica, sans-serif;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
     height: 96.5vh;
+}
+
+.body_light {
+    background-color: lightgray;
+    color: white;
+    transition: ease 0.4s;
+}
+
+.body_dark {
+    background-color: #2d2d2d;
+    color: black;
+    transition: ease 0.4s;
 }
 
 .card {
     display: flex;
     justify-content: center;
-    background-color: #444444;
     width: 1127px;
     height: 595px;
     border-radius: 30px;
 }
 
-.main-info {
+.card_light {
+    background-color: #444444;
+    transition: ease 0.4s;
+}
+
+.card_dark {
+    background-color: #cacaca;
+    transition: ease 0.4s;
+}
+
+.card-info {
     height: 100%;
-    width: 30%;
+    width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.employee-info {
+.card-info__employee-info {
     margin-top: 12.5%;
-    height: 60%;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu {
+
+.card-info__avatar {
+    width: 180px;
+    margin-top: 23px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    box-shadow: 12px 12px 0 grey;
+}
+
+.card-info__title {
     display: flex;
-    width: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-info__title-header {
+    margin-top: 7px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.card-info__title-job {
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.card-info__menu {
+    display: flex;
+    width: 93px;
     justify-content: space-between;
     align-items: center;
+}
+
+.card-info__menu-icon {
+    width: 24px;
+    border-radius: 50%;
 }
 
 @keyframes button-click {
@@ -53,86 +102,92 @@
     }
 }
 
-.download {
+.card-info__download {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.5vh solid white;
+    border: 3px solid;
     text-decoration: none;
-    color: white;
-    width: 168px;
-    height: 46px;
+    margin-bottom: 10px;
+    width: 164px;
+    height: 39px;
     border-radius: 40px;
     font-size: 17px;
     transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
 }
 
-.download:hover {
+.card-info__download_light {
+    border-color: white;
+    color: white;
+    transition: ease 0.4s;
+}
+
+.card-info__download_dark {
+    border-color: black;
+    color: black;
+    transition: ease 0.4s;
+}
+
+.card-info__download:hover {
     background-color: #222222;
     transition: background-color 0.5s;
 }
 
-.download:active {
+.card-info__download:active {
     animation-name: button-click;
     animation-duration: 0.2s;
 }
 
-.main_plate {
-    height: 100%;
-    width: 70%;
-    border-radius: 30px;
-    background-color: #222222;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.avatar {
-    width: 180px;
-    margin-bottom: 8%;
-    border-radius: 50%;
-    box-shadow: 12px 12px 0 grey;
-}
-
-.employee-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.explanation {
-    font-size: 20px;
-}
-
-.icon {
-    width: 28px;
-    border-radius: 50%;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer {
+.card-info__footer {
     font-size: 14px;
-    margin-bottom: 5%;
+    margin-bottom: 15px;
 }
 
-.main_header {
+.card-plate {
+    height: 100%;
+    width: 747px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-plate_light {
+    background-color: #222222;
+    transition: ease 0.4s;
+}
+
+.card-plate_dark {
+    background-color: skyblue;
+    transition: ease 0.4s;
+}
+
+.card-plate__title {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-plate__title-header {
     font-size: 62px;
     font-weight: bold;
 }
 
-.main_job {
+.card-plate__title-job {
+    margin-top: 6px;
+    margin-bottom: -5px;
     font-size: 22px;
+}
+
+.themeSwitch {
+    position: absolute;
+    top: 0.25%;
+    right: 0.25%;
+}
+
+.themeSwitch__button {
+    width: 64px;
 }

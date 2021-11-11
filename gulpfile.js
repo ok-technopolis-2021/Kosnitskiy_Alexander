@@ -5,7 +5,7 @@ const inject = require('gulp-inject');
 const rollup = require('rollup');
 const image = require('gulp-image');
 
-const resourcesPath = 'src/resources/*';
+const resourcesPath = 'src/resources/*.png';
 const stylesPath = './src/styles/**/*.scss';
 const jsPath = 'src/**/*.js';
 const htmlPath = './src/index.html';

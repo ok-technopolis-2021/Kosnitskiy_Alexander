@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
     const button = document.getElementsByClassName("themeSwitch__button")[0];
 
     button.addEventListener('click', () => {

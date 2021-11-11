@@ -12,8 +12,7 @@ const htmlPath = './src/index.html';
 const docsPath = './docs/';
 const rollupConfig = {
     input: 'src/app.js',
-    plugins: [
-    ]
+    plugins: []
 }
 
 const imageOptimizingSettings = {
@@ -41,9 +40,9 @@ gulp.task('rollup', async (done) => {
 });
 
 /**
-* Простая задача на компиляцию scss файлов в файл style.css, ее отличие от rollup плагина rollup-plugin-scss
-* в том, что файлы подключаются по маске, а в rollup они подключаются явно через import
-**/
+ * Простая задача на компиляцию scss файлов в файл style.css, ее отличие от rollup плагина rollup-plugin-scss
+ * в том, что файлы подключаются по маске, а в rollup они подключаются явно через import
+ **/
 gulp.task('css', () => {
     return gulp.src(stylesPath)
         .pipe(less())
@@ -52,8 +51,8 @@ gulp.task('css', () => {
 });
 
 /**
-* Вотчинг всех файлов которые мы
-**/
+ * Вотчинг всех файлов которые мы
+ **/
 gulp.task('watch', function (done) {
     gulp.watch(stylesPath, gulp.series('css'));
     gulp.watch(jsPath, gulp.series('rollup'));
@@ -72,11 +71,11 @@ gulp.task('resources', function () {
 /**
  * Описание задачи на вставку js & css файлов в наш шаблон index.html
  */
- gulp.task('html', function () {
+gulp.task('html', function () {
     const target = gulp.src(htmlPath);
-    const sources = gulp.src(['./docs/**/*.js', './docs/**/*.css'], { read: false });
+    const sources = gulp.src(['./docs/**/*.js', './docs/**/*.css'], {read: false});
 
-    return target.pipe(inject(sources, { ignorePath: '../docs', relative: true, addPrefix: '.' }))
+    return target.pipe(inject(sources, {ignorePath: '../docs', relative: true, addPrefix: '.'}))
         .pipe(gulp.dest(docsPath));
 });
 

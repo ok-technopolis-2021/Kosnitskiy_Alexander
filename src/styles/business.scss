@@ -170,6 +170,81 @@
             font-size: 22px;
         }
     }
+
+    &__skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+        width: 65%;
+        height: 90%;
+        &__instance {
+            margin: 3px;
+            border: 2px solid aliceblue;
+            padding: 10px;
+            border-radius: 8px;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &-name {
+                font-size: larger;
+            }
+            &-stat {
+                width: 100%;
+                height: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &-bar {
+                    border: 2px solid aliceblue;
+                    border-radius: 10px;
+                    height: 25%;
+                    width: 75%;
+                    display: flex;
+                    &-filled {
+                        border-radius: 10px;
+                        height: 100%;
+                        background-color: white;
+                        width: 38%;
+                    }
+                }
+                &-percentage {
+                    padding-right: 15px;
+                }
+                &-delete {
+                    height: 80%;
+                }
+            }
+        }
+
+        &__constructor {
+            margin: 3px;
+            border: 2px solid aliceblue;
+            padding: 10px;
+            border-radius: 8px;
+            width: 100%;
+            height: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5%;
+    }
+}
+
+#skillName {
+    width: 220px;
+}
+
+#percentage {
+    width: 130px;
 }
 
 .card-plate_light {

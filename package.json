@@ -6,6 +6,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
+    "debug": "gulp debug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +19,11 @@
     "url": "https://github.com/ok-technopolis-2021/Kosnitskiy_Alexander/issues"
   },
   "homepage": "https://github.com/ok-technopolis-2021/Kosnitskiy_Alexander#readme",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^4.5.4",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-image": "^6.2.1",

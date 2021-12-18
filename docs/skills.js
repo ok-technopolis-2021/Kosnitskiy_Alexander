@@ -15,11 +15,11 @@ function createNewSkillConstruction(name, percentage) {
     parent.insertBefore(newDiv, place);
     var stat = document.createElement("div");
     stat.className = "card-plate__skills__instance-stat";
+    newDiv.appendChild(stat);
     var skillName = document.createElement("div");
     skillName.className = "card-plate__skills__instance-name";
-    newDiv.appendChild(stat);
-    newDiv.insertBefore(skillName, stat);
     var content = document.createTextNode(name);
+    newDiv.insertBefore(skillName, stat);
     skillName.appendChild(content);
     var deleteButton = document.createElement("input");
     deleteButton.type = "image";
@@ -31,8 +31,8 @@ function createNewSkillConstruction(name, percentage) {
     });
     var percent = document.createElement("div");
     percent.className = "card-plate__skills__instance-stat-percentage";
-    stat.insertBefore(percent, deleteButton);
     content = document.createTextNode(percentage.toString());
+    stat.insertBefore(percent, deleteButton);
     percent.appendChild(content);
     var bar = document.createElement("div");
     bar.className = "card-plate__skills__instance-stat-bar";

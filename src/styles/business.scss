@@ -43,54 +43,84 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
 
-.card-info__employee-info {
-    margin-top: 12.5%;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+    &__employee-info {
+        margin-top: 12.5%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 
-.card-info__avatar {
-    width: 180px;
-    margin-top: 23px;
-    margin-bottom: 8px;
-    border-radius: 50%;
-    box-shadow: 12px 12px 0 grey;
-}
+    &__avatar {
+        width: 180px;
+        margin-top: 23px;
+        margin-bottom: 8px;
+        border-radius: 50%;
+        box-shadow: 12px 12px 0 grey;
+    }
 
-.card-info__title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-.card-info__title-header {
-    margin-top: 7px;
-    text-align: center;
-    font-size: 38px;
-    font-weight: bold;
-}
+        &-header {
+            margin-top: 7px;
+            text-align: center;
+            font-size: 38px;
+            font-weight: bold;
+        }
 
-.card-info__title-job {
-    margin-top: 7px;
-    font-size: 20px;
-}
+        &-job {
+            margin-top: 7px;
+            font-size: 20px;
+        }
+    }
 
-.card-info__menu {
-    display: flex;
-    width: 93px;
-    justify-content: space-between;
-    align-items: center;
-}
+    &__menu {
+        display: flex;
+        width: 93px;
+        justify-content: space-between;
+        align-items: center;
 
-.card-info__menu-icon {
-    width: 24px;
-    border-radius: 50%;
+        &-icon {
+            width: 24px;
+            border-radius: 50%;
+        }
+    }
+
+    &__download {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid;
+        text-decoration: none;
+        margin-bottom: 10px;
+        width: 164px;
+        height: 39px;
+        border-radius: 40px;
+        font-size: 17px;
+        transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
+
+        &:hover {
+            background-color: #222222;
+            transition: background-color 0.5s;
+        }
+
+        &:active {
+            animation-name: button-click;
+            animation-duration: 0.2s;
+        }
+    }
+
+    &__footer {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
 }
 
 @keyframes button-click {
@@ -100,20 +130,6 @@
         height: 52px;
         font-size: 19px;
     }
-}
-
-.card-info__download {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid;
-    text-decoration: none;
-    margin-bottom: 10px;
-    width: 164px;
-    height: 39px;
-    border-radius: 40px;
-    font-size: 17px;
-    transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
 }
 
 .card-info__download_light {
@@ -128,21 +144,6 @@
     transition: ease 0.4s;
 }
 
-.card-info__download:hover {
-    background-color: #222222;
-    transition: background-color 0.5s;
-}
-
-.card-info__download:active {
-    animation-name: button-click;
-    animation-duration: 0.2s;
-}
-
-.card-info__footer {
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
 .card-plate {
     height: 100%;
     width: 747px;
@@ -151,6 +152,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__title {
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-header {
+            font-size: 62px;
+            font-weight: bold;
+        }
+
+        &-job {
+            margin-top: 6px;
+            margin-bottom: -5px;
+            font-size: 22px;
+        }
+    }
 }
 
 .card-plate_light {
@@ -161,25 +180,6 @@
 .card-plate_dark {
     background-color: skyblue;
     transition: ease 0.4s;
-}
-
-.card-plate__title {
-    margin-bottom: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-plate__title-header {
-    font-size: 62px;
-    font-weight: bold;
-}
-
-.card-plate__title-job {
-    margin-top: 6px;
-    margin-bottom: -5px;
-    font-size: 22px;
 }
 
 .themeSwitch {

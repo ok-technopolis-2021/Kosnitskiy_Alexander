@@ -78,14 +78,6 @@
   width: 24px;
   border-radius: 50%;
 }
-@keyframes button-click {
-  50% {
-    background-color: #292828;
-    width: 190px;
-    height: 52px;
-    font-size: 19px;
-  }
-}
 .card-info__download {
   display: flex;
   align-items: center;
@@ -99,16 +91,6 @@
   font-size: 17px;
   transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
 }
-.card-info__download_light {
-  border-color: white;
-  color: white;
-  transition: ease 0.4s;
-}
-.card-info__download_dark {
-  border-color: black;
-  color: black;
-  transition: ease 0.4s;
-}
 .card-info__download:hover {
   background-color: #222222;
   transition: background-color 0.5s;
@@ -121,6 +103,24 @@
   font-size: 14px;
   margin-bottom: 15px;
 }
+@keyframes button-click {
+  50% {
+    background-color: #292828;
+    width: 190px;
+    height: 52px;
+    font-size: 19px;
+  }
+}
+.card-info__download_light {
+  border-color: white;
+  color: white;
+  transition: ease 0.4s;
+}
+.card-info__download_dark {
+  border-color: black;
+  color: black;
+  transition: ease 0.4s;
+}
 .card-plate {
   height: 100%;
   width: 747px;
@@ -129,14 +129,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.card-plate_light {
-  background-color: #222222;
-  transition: ease 0.4s;
-}
-.card-plate_dark {
-  background-color: skyblue;
-  transition: ease 0.4s;
 }
 .card-plate__title {
   margin-bottom: 5px;
@@ -153,6 +145,14 @@
   margin-top: 6px;
   margin-bottom: -5px;
   font-size: 22px;
+}
+.card-plate_light {
+  background-color: #222222;
+  transition: ease 0.4s;
+}
+.card-plate_dark {
+  background-color: skyblue;
+  transition: ease 0.4s;
 }
 .themeSwitch {
   position: absolute;

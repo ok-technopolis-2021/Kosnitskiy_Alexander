@@ -3,20 +3,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     button.addEventListener('click', () => {
         let currentBodyClass = document.body.classList;
-        let currentCardClass = document.getElementsByClassName("card")[0].classList;
-        let currentCardPlateClass = document.getElementsByClassName("card-plate")[0].classList;
-        let currentCardDownloadButtonClass = document.getElementsByClassName("card-info__download")[0].classList;
+        let currentCardClass = document.querySelector(".card").classList;
+        let currentCardPlateClass = document.querySelector(".card-plate").classList;
+        let currentCardDownloadButtonClass = document.querySelector(".card-info__download").classList;
 
-        if (currentBodyClass.contains("body_light")) {
-            currentBodyClass.replace("body_light", "body_dark");
-            currentCardClass.replace("card_light", "card_dark");
-            currentCardPlateClass.replace("card-plate_light", "card-plate_dark");
-            currentCardDownloadButtonClass.replace("card-info__download_light", "card-info__download_dark");
-        } else if (currentBodyClass.contains("body_dark")) {
-            currentBodyClass.replace("body_dark", "body_light");
-            currentCardClass.replace("card_dark", "card_light");
-            currentCardPlateClass.replace("card-plate_dark", "card-plate_light");
-            currentCardDownloadButtonClass.replace("card-info__download_dark", "card-info__download_light");
-        }
+        currentBodyClass.toggle("body_dark");
+        currentCardClass.toggle("card_dark");
+        currentCardPlateClass.toggle("card-plate_dark");
+        currentCardDownloadButtonClass.toggle("card-info__download_dark");
     });
 });

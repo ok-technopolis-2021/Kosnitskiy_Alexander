@@ -1,0 +1,193 @@
+.body {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96.5vh;
+}
+
+.body_light {
+    background-color: lightgray;
+    color: white;
+    transition: ease 0.4s;
+}
+
+.body_dark {
+    background-color: #2d2d2d;
+    color: black;
+    transition: ease 0.4s;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    width: 1127px;
+    height: 595px;
+    border-radius: 30px;
+}
+
+.card_light {
+    background-color: #444444;
+    transition: ease 0.4s;
+}
+
+.card_dark {
+    background-color: #cacaca;
+    transition: ease 0.4s;
+}
+
+.card-info {
+    height: 100%;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__employee-info {
+        margin-top: 12.5%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__avatar {
+        width: 180px;
+        margin-top: 23px;
+        margin-bottom: 8px;
+        border-radius: 50%;
+        box-shadow: 12px 12px 0 grey;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-header {
+            margin-top: 7px;
+            text-align: center;
+            font-size: 38px;
+            font-weight: bold;
+        }
+
+        &-job {
+            margin-top: 7px;
+            font-size: 20px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        width: 93px;
+        justify-content: space-between;
+        align-items: center;
+
+        &-icon {
+            width: 24px;
+            border-radius: 50%;
+        }
+    }
+
+    &__download {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid;
+        text-decoration: none;
+        margin-bottom: 10px;
+        width: 164px;
+        height: 39px;
+        border-radius: 40px;
+        font-size: 17px;
+        transition: padding 0.5s, background-color 0.5s, font-size 0.5s;
+
+        &:hover {
+            background-color: #222222;
+            transition: background-color 0.5s;
+        }
+
+        &:active {
+            animation-name: button-click;
+            animation-duration: 0.2s;
+        }
+    }
+
+    &__footer {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@keyframes button-click {
+    50% {
+        background-color: #292828;
+        width: 190px;
+        height: 52px;
+        font-size: 19px;
+    }
+}
+
+.card-info__download_light {
+    border-color: white;
+    color: white;
+    transition: ease 0.4s;
+}
+
+.card-info__download_dark {
+    border-color: black;
+    color: black;
+    transition: ease 0.4s;
+}
+
+.card-plate {
+    height: 100%;
+    width: 747px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-header {
+            font-size: 62px;
+            font-weight: bold;
+        }
+
+        &-job {
+            margin-top: 6px;
+            margin-bottom: -5px;
+            font-size: 22px;
+        }
+    }
+}
+
+.card-plate_light {
+    background-color: #222222;
+    transition: ease 0.4s;
+}
+
+.card-plate_dark {
+    background-color: skyblue;
+    transition: ease 0.4s;
+}
+
+.themeSwitch {
+    position: absolute;
+    top: 0.25%;
+    right: 0.25%;
+}
+
+.themeSwitch__button {
+    width: 64px;
+}

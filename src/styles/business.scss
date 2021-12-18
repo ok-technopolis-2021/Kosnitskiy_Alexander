@@ -177,7 +177,7 @@
         align-items: center;
         padding-top: 25px;
         width: 65%;
-        height: 95%;
+        height: 90%;
         &__instance {
             margin: 3px;
             border: 2px solid aliceblue;
@@ -201,7 +201,7 @@
                     border: 2px solid aliceblue;
                     border-radius: 10px;
                     height: 25%;
-                    width: 85%;
+                    width: 75%;
                     display: flex;
                     &-filled {
                         border-radius: 10px;
@@ -212,6 +212,9 @@
                 }
                 &-percentage {
                     padding-right: 15px;
+                }
+                &-delete {
+                    height: 80%;
                 }
             }
         }

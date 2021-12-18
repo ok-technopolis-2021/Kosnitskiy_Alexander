@@ -152,7 +152,7 @@
   align-items: center;
   padding-top: 25px;
   width: 65%;
-  height: 95%;
+  height: 90%;
 }
 .card-plate__skills__instance {
   margin: 3px;
@@ -179,7 +179,7 @@
   border: 2px solid aliceblue;
   border-radius: 10px;
   height: 25%;
-  width: 85%;
+  width: 75%;
   display: flex;
 }
 .card-plate__skills__instance-stat-bar-filled {
@@ -190,6 +190,9 @@
 }
 .card-plate__skills__instance-stat-percentage {
   padding-right: 15px;
+}
+.card-plate__skills__instance-stat-delete {
+  height: 80%;
 }
 .card-plate__skills__constructor {
   margin: 3px;
